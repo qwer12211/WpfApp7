@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="OrdersDataGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Customers.CustomerName}" Header="Имя"/>
+                <DataGridTextColumn Binding="{Binding Customers.CustomerSurename}" Header="Фамилия"/>
+                <DataGridTextColumn Binding="{Binding Customers.CustomerMiddleName}" Header="Отчество"/>
+                <DataGridTextColumn Binding="{Binding Customers.CustomerCard}" Header="Номер карты"/>
+                <DataGridTextColumn Binding="{Binding Customers.CustomerNumberOfPhone}" Header="Номер телефона" />
+                <DataGridTextColumn Binding="{Binding Burgers.BurgerName}" Header="Название бургера"/>
+                <DataGridTextColumn Binding="{Binding Burgers.BurgerIngredient}" Header="Состав"/>
+                <DataGridTextColumn Binding="{Binding Burgers.BurgerSum}" Header="Стоимость"/>
+                <DataGridTextColumn Binding="{Binding Burgers.BurgerWeight}" Header="Вес"/>
+                <DataGridTextColumn Binding="{Binding Burgers.BurgerLength}" Header="длина"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+
+
+</Window>
